@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Interactive Web Page 🚀</h1>
+        <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <!-- Counter Game -->
+    <section class="card">
+        <h2>🎮 Counter Game</h2>
+        <p>Click the button to increase your score!</p>
+        <div class="counter-container">
+            <button id="decrement">➖</button>
+            <span id="count">0</span>
+            <button id="increment">➕</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="card">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq">
+            <button class="faq-question">What is this page about?</button>
+            <p class="faq-answer">This page demonstrates JavaScript interactivity using event listeners and DOM manipulation.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-question">How does the form work?</button>
+            <p class="faq-answer">The form uses JavaScript to validate your inputs before submitting.</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="card">
+        <h2>📝 Sign Up Form</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+                <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" />
+                <small class="error-message"></small>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+        <p id="success-message" class="success"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
